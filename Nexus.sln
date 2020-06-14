@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus.Core", "Nexus.Core\Nexus.Core.csproj", "{2155BCF4-3D6D-4015-AAB2-22814817DDDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus.Logging", "Nexus.Logging\Nexus.Logging.csproj", "{F99E4356-5B96-4629-9E8B-504080F1F195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus.Logging.Telegram", "Nexus.Logging.Telegram\Nexus.Logging.Telegram.csproj", "{A6F8F3E4-3E75-4856-82BC-53CDCBCA43A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2155BCF4-3D6D-4015-AAB2-22814817DDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2155BCF4-3D6D-4015-AAB2-22814817DDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2155BCF4-3D6D-4015-AAB2-22814817DDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2155BCF4-3D6D-4015-AAB2-22814817DDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F99E4356-5B96-4629-9E8B-504080F1F195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F99E4356-5B96-4629-9E8B-504080F1F195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F99E4356-5B96-4629-9E8B-504080F1F195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F99E4356-5B96-4629-9E8B-504080F1F195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F8F3E4-3E75-4856-82BC-53CDCBCA43A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F8F3E4-3E75-4856-82BC-53CDCBCA43A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F8F3E4-3E75-4856-82BC-53CDCBCA43A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F8F3E4-3E75-4856-82BC-53CDCBCA43A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
