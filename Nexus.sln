@@ -6,8 +6,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus.Logging", "Nexus.Logg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus.Logging.Telegram", "Nexus.Logging.Telegram\Nexus.Logging.Telegram.csproj", "{A6F8F3E4-3E75-4856-82BC-53CDCBCA43A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus.Logging.Prophecy", "Nexus.Logging.Prophecy\Nexus.Logging.Prophecy.csproj", "{7185C05E-D7B2-43CE-9647-93D33DB0ED99}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +24,5 @@ Global
 		{A6F8F3E4-3E75-4856-82BC-53CDCBCA43A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6F8F3E4-3E75-4856-82BC-53CDCBCA43A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6F8F3E4-3E75-4856-82BC-53CDCBCA43A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7185C05E-D7B2-43CE-9647-93D33DB0ED99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7185C05E-D7B2-43CE-9647-93D33DB0ED99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7185C05E-D7B2-43CE-9647-93D33DB0ED99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7185C05E-D7B2-43CE-9647-93D33DB0ED99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
