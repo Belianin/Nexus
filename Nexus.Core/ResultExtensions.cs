@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 
 namespace Nexus.Core
 {
@@ -8,10 +9,20 @@ namespace Nexus.Core
         {
             return result.IsFail ? result.Error : callback(result);
         }
+        
+        public static async Task<Result<T2>> Then<T1, T2>(this Result<T1> result, Func<T1, Task<Result<T2>>> callback)
+        {
+            return result.IsFail ? result.Error : await callback(result).ConfigureAwait(false);
+        }
 
         public static Result Then<T1>(this Result<T1> result, Func<T1, Result> callback)
         {
             return result.IsFail ? result : callback(result);
+        }
+        
+        public static async Task<Result> Then<T1>(this Result<T1> result, Func<T1, Task<Result>> callback)
+        {
+            return result.IsFail ? result : await callback(result).ConfigureAwait(false);
         }
     }
 }
