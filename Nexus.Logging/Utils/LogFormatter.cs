@@ -20,11 +20,10 @@ namespace Nexus.Logging.Utils
 
         private static string TagsToString(LogEvent logEvent)
         {
-            var tags = logEvent.Context != null
-                ? new[] {logEvent.Level.ToString().ToUpper()}.Concat(logEvent.Context)
-                : new[] {logEvent.Level.ToString().ToUpper()};
-
-            return string.Join(" ", tags.Select(t => $"[{t}]"));
+            var levelText = logEvent.Level.ToString().ToUpper();
+            return logEvent.Context.Count == 0
+                ? levelText
+                : $"{levelText} {string.Join(" ", logEvent.Context.Select(t => $"[{t}]"))}";
         }
     }
 }

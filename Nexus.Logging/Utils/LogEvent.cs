@@ -8,7 +8,7 @@ namespace Nexus.Logging.Utils
         public LogLevel Level { get; }
         public DateTime DateTime { get; }
         public string Message { get; }
-        public Stack<string> Context { get; set; }
+        public Stack<string> Context { get; }
 
         public LogEvent(LogLevel level, string message, params string[] context)
         {

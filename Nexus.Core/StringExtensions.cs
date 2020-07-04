@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Newtonsoft.Json;
 
 namespace Nexus.Core
@@ -19,5 +21,11 @@ namespace Nexus.Core
         
         public static bool EqualsIgnoreCase(this string str, string other) =>
             str.Equals(other, StringComparison.InvariantCultureIgnoreCase);
+        
+        public static IEnumerable<string> Chunk(this string str, int chunkSize)
+        {
+            return Enumerable.Range(0, str.Length / chunkSize)
+                .Select(i => str.Substring(i * chunkSize, chunkSize));
+        }
     }
 }
